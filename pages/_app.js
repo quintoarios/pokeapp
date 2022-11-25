@@ -2,8 +2,9 @@ import * as React from "react";
 import "../styles/globals.scss";
 
 import { NextUIProvider } from "@nextui-org/react";
+import { darkTheme } from "../themes/darkTheme";
 
-import { darkTheme } from './../themes';
+
 
 
 function MyApp({ Component, pageProps }) {

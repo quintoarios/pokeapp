@@ -1,11 +1,12 @@
 import React from "react";
-import Layout from "./../../components/layouts/layout";
+import CustomLayout from "../../components/Layouts/CustomLayout";
+
 
 const FavoritosPage = () => {
     return (
-        <Layout title="Pokedex ! Favoritos">
+        <CustomLayout title="Pokedex ! Favoritos">
         <h1>Desde Favoritos</h1>
-        </Layout>
+        </CustomLayout>
     );
 };
 
