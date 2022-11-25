@@ -2,7 +2,7 @@ import { Button,Container, Image, Card, Grid, Text } from "@nextui-org/react";
 import React, { useState, useEffect } from "react";
 import {Popover, Spacer,Pagination as UIPagination,Row,} from "@nextui-org/react";
 import { pokeApi } from "../../apis";
-import Layout from "../../components/layouts/layout";
+import Layout from "../../components/Layouts/layout";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";

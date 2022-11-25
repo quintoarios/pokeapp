@@ -1,13 +1,13 @@
 import {useState , useEffect} from 'react';
 
 import Image from 'next/image';
-import HolaMundo from '../components/HolaMundo';
-import styles from '../styles/Home.module.css';
+
 import { pokeApi } from "../apis";
-import Layout from '../components/layouts/layout';
+
 import { Card, Grid } from '@nextui-org/react';
 import { Text } from "@nextui-org/react";
 import PokemonCard from '../components/PokemonCard';
+import Layout from '../components/Layouts/Layout';
 
 export default function Home() {
   const [pokemons, setPokemons] = useState([]);
