@@ -1,0 +1,60 @@
+footer {
+  width: 100%;
+}
+
+.swiper{
+  width: 100%;
+  height: 100%;
+}
+
+swiper-siide{
+text-align: center;
+font-size: 10px;
+background: transparent;
+
+/* Center siide text vertically */
+display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-packs: center;
+-webkit-justify-contents: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
+min-height: 340px;
+
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.mySwiper .swiper-pagination-bullet {
+  bottom: 0 !important;
+  width: 40px !important;
+  height: 40px !important;
+  background-image: url("/img/pokebola.png") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  filter: grayscale (100%) !important;
+  background-size: contain !important;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+}
+  .mySwiper .swiper-pagination-bullet-active {
+  background-image: url("/inc/pokebola.png") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain limportant;
+  filter: none !important;
+  }
