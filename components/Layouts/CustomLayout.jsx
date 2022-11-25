@@ -2,7 +2,7 @@ import { Container } from "@nextui-org/react";
 import Head from "next/head";
 import NavBar from "../ui/NavBar";
 
-const Layout = ({children, title }) => {
+const CustomLayout = ({children, title }) => {
     return (
         <>
         <Head>
@@ -34,4 +34,4 @@ const Layout = ({children, title }) => {
     );
 };
 
-export default Layout;
+export default CustomLayout;

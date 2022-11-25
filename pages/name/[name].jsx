@@ -2,7 +2,7 @@ import { Button,Container, Image, Card, Grid, Text } from "@nextui-org/react";
 import React, { useState, useEffect } from "react";
 import {Popover, Spacer,Pagination as UIPagination,Row,} from "@nextui-org/react";
 import { pokeApi } from "../../apis";
-import Layout from "../../components/Layouts/layout";
+
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,6 +12,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { useRouter } from 'next/router'
+import CustomLayout from "../../components/Layouts/CustomLayout";
 
 //import { getPokemonAbility } from "../../utils/getPokemonAbility";
 
@@ -57,7 +58,7 @@ const PokemonPage = () => {
     if (!pokemon) return null;
     
     return (
-        <Layout title={pokemon.name}>
+        <CustomLayout title={pokemon.name}>
             <Grid.Container css={{marginTop:"5px"}} gap={2}>
                 <Grid xs={12} sm={4}>
                     <Card>
@@ -178,7 +179,7 @@ const PokemonPage = () => {
                          </Card>
                          </Grid>
             </Grid.Container>
-        </Layout>
+        </CustomLayout>
     );
 }
 

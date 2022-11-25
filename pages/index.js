@@ -7,7 +7,8 @@ import { pokeApi } from "../apis";
 import { Card, Grid } from '@nextui-org/react';
 import { Text } from "@nextui-org/react";
 import PokemonCard from '../components/PokemonCard';
-import Layout from '../components/Layouts/Layout';
+import CustomLayout from '../components/Layouts/CustomLayout';
+
 
 export default function Home() {
   const [pokemons, setPokemons] = useState([]);
@@ -33,7 +34,7 @@ export default function Home() {
   if(pokemons.length === 0 ) return null;
 
   return (
-      <Layout title="Pokedex ! Listado de Pokemons">
+      <CustomLayout title="Pokedex ! Listado de Pokemons">
         <Grid.Container gap={2} justify="flex-start">
           <Grid xs={12} sm={3} md={2} css={{alignItems:"stretch"}}>
             <Card>
@@ -54,6 +55,6 @@ export default function Home() {
             </Grid.Container>
           </Grid>
         </Grid.Container>
-      </Layout>
+      </CustomLayout>
   );
 }
